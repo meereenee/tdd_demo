@@ -1,4 +1,4 @@
-const add = (a, b) => a + b;
+const add = (...numbers) => numbers.reduce((acc, cur) => acc + cur, 0);
 
 module.exports = {
     add
