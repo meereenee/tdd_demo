@@ -20,5 +20,19 @@ describe('subtract function', () => {
     it('should subtract all the rest numbers from the first number', () => {
         expect(subtract(1, 2, 3)).toBe(-4);
         expect(subtract(undefined, 2, 3)).toBe(-5);
+        expect(subtract(null, 2, 3)).toBe(-5);
+        expect(subtract(-0, 2, 3)).toBe(-5);
+        expect(subtract('undefined', 2, 3)).toBe(-5);
+        expect(subtract('null', 2, 3)).toBe(-5);
+        expect(subtract('NaN', 2, 3)).toBe(-5);
+        expect(subtract(NaN, 2, 3)).toBe(-5);
+        expect(subtract(false, 2, 3)).toBe(-5);
+        expect(subtract('', 2, 3)).toBe(-5);
+        expect(subtract({}, 2, 3)).toBe(-5);
+        expect(subtract([], 2, 3)).toBe(-5);
+        expect(subtract(() => 3, 2, 3)).toBe(-5);
+        expect(subtract('{}', 2, 3)).toBe(-5);
+        expect(subtract('[]', 2, 3)).toBe(-5);
+        expect(subtract('() => 3', 2, 3)).toBe(-5);
     });
 });
