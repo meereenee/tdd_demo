@@ -18,7 +18,7 @@ describe('add function', () => {
 
     it('should ignore falsy values', () => {
 
-        expect(add(4, 5, 6, 7, null, undefined, '', NaN)).toBe(22);
+        expect(add(4, 5, 6, 7, null, undefined,'', NaN)).toBe(22);
 
     });
 
