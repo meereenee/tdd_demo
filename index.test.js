@@ -1,4 +1,4 @@
-const {add} = require('./index');
+const {add, subtract} = require('./index');
 
 describe('add function', () => {
 
