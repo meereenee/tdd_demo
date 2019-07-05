@@ -4,7 +4,7 @@ describe('add function', () => {
 
     it('should add two numbers', () => {
 
-        expect(add(4, 5)).toBe(935);
+        expect(add(4, 5)).toBe(9);
 
     });
 
