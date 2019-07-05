@@ -8,13 +8,11 @@ describe('add function', () => {
 
     });
 
-
     it('should add arbitrary number of numbers', () => {
 
         expect(add(4, 5, 6, 7)).toBe(22);
 
     });
-
 
     it('should ignore falsy values', () => {
 
