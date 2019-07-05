@@ -14,3 +14,10 @@ describe('add function', () => {
         expect(add('1', 2, [5, 6], {a: 10, b: 50}, () => 22)).toBe(3);
     });
 });
+
+describe('subtract function', () => {
+
+    it('should subtract all the rest numbers from the first number', () => {
+        expect(subtract(1, 2, 3)).toBe(-4);
+    });
+});
