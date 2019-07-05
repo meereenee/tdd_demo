@@ -6,7 +6,7 @@ const add = (...numbers) => {
 
 const subtract = (...numbers) => {
     const [first, ...rest] = numbers;
-    return first - add(...rest);
+    return (first || 0) - add(...rest);
 };
 
 module.exports = {
