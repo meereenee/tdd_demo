@@ -26,5 +26,11 @@ describe('add function', () => {
 
     });
 
+    it('should ignore all types that are not strings or numbers', () => {
+
+        expect(add('1', 2, [5, 6], {a: 10, b: 50}, () => 22)).toBe(3);
+
+    });
+
 
 });
