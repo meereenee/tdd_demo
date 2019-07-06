@@ -4,10 +4,7 @@ const add = (...values) => {
         .reduce((acc, cur) => acc + +cur, 0);
 };
 
-const subtract = (...values) => {
-    const [first, ...rest] = values;
-    return (+first || 0) - add(...rest);
-};
+const subtract = (first, ...rest) => (+first || 0) - add(...rest);
 
 module.exports = {
     add,
