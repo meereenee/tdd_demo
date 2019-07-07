@@ -5,8 +5,8 @@ describe('math functions', () => {
     describe('add function', () => {
 
         it('should add arbitrary number of numbers', () => {
+            expect(add()).toBe(0);
             expect(add(4)).toBe(4);
-            expect(add(4, 5)).toBe(9);
             expect(add(4, 5, 6)).toBe(15);
         });
 
@@ -22,6 +22,7 @@ describe('math functions', () => {
     describe('subtract function', () => {
 
         it('should subtract all the rest numbers from the first number', () => {
+            expect(subtract()).toBe(0);
             expect(subtract(1, 2, 3)).toBe(-4);
             expect(subtract(undefined, 2, 3)).toBe(-5);
             expect(subtract(null, 2, 3)).toBe(-5);
